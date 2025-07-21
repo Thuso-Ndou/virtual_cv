@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 import { Menu, X, Download } from "lucide-react";
 
 const Navigation = () => {
@@ -42,10 +42,10 @@ const Navigation = () => {
   };
 
   const downloadResume = () => {
-    // In a real app, this would trigger a download of the actual resume
+    //trigger a download of the actual resume
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // This would be the actual resume file
-    link.download = 'Alex_Johnson_Resume.pdf';
+    link.href = '/resume.pdf';
+    link.download = 'Thuso_Ndou_Resume.pdf';
     link.click();
   };
 
@@ -60,7 +60,7 @@ const Navigation = () => {
             onClick={() => scrollToSection('home')}
             className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hover:scale-105 transition-transform"
           >
-            Alex Johnson
+            Thuso Ndou
           </button>
 
           {/* Desktop Navigation */}
