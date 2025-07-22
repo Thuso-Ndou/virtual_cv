@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -12,7 +11,7 @@ const Hero = () => {
       id="home" 
       className="min-h-screen relative flex items-center justify-center overflow-hidden"
       style={{
-        backgroundImage: `linear-gradient(rgba(34, 39, 51, 0.8), rgba(34, 39, 51, 0.9)), url(${heroBg})`,
+        backgroundImage: `linear-gradient(rgba(34, 39, 51, 0.8), rgba(34, 39, 51, 0.9)), url()`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
@@ -30,7 +29,7 @@ const Hero = () => {
         <div className="glass-card p-8 md:p-12">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
             <span className="block text-foreground">Hello, I'm</span>
-            <span className="section-title">Alex Johnson</span>
+            <span className="section-title">Thuso Ndou</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-light">

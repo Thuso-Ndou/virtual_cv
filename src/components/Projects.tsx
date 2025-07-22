@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 import { ExternalLink, Github, Zap, Shield, Smartphone } from "lucide-react";
 
 interface Project {
