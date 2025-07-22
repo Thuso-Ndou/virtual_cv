@@ -1,5 +1,6 @@
 import { Button } from "../components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import bg1 from "../assets/bg1.png";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -11,7 +12,7 @@ const Hero = () => {
       id="home" 
       className="min-h-screen relative flex items-center justify-center overflow-hidden"
       style={{
-        backgroundImage: `linear-gradient(rgba(34, 39, 51, 0.8), rgba(34, 39, 51, 0.9)), url()`,
+        backgroundImage: `linear-gradient(rgba(34, 39, 51, 0.8), rgba(34, 39, 51, 0.9)), url(${bg1})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
