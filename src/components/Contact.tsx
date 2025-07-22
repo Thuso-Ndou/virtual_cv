@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Textarea } from "../components/ui/textarea";
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Instagram } from "lucide-react";
 import { useToast } from "../hooks/use-toast";
 
 const Contact = () => {
@@ -42,19 +42,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "alex.johnson@example.com",
-      link: "mailto:alex.johnson@example.com"
+      value: "thusondou30@gmail.com",
+      link: "thusondou30@gmail.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "+27 71-325-5377",
+      link: "tel:+27713255377"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "San Francisco, CA",
+      value: "Gauteng, SA",
       link: null
     }
   ];
@@ -63,19 +63,19 @@ const Contact = () => {
     {
       icon: Github,
       name: "GitHub",
-      url: "https://github.com",
+      url: "https://github.com/Thuso-Ndou",
       color: "hover:text-foreground"
     },
     {
       icon: Linkedin,
       name: "LinkedIn",
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/thuso-ndou-5113",
       color: "hover:text-blue-400"
     },
     {
-      icon: Twitter,
-      name: "Twitter",
-      url: "https://twitter.com",
+      icon: Instagram,
+      name: "Instagram",
+      url: "http://instagram.com/thuso.maps",
       color: "hover:text-blue-300"
     }
   ];

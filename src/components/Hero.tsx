@@ -64,7 +64,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6">
             <a 
-              href="https://github.com" 
+              href="https://github.com/Thuso-Ndou" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 glass-button hover:text-primary transition-colors"
@@ -72,7 +72,7 @@ const Hero = () => {
               <Github className="w-6 h-6" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/thuso-ndou-5113" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 glass-button hover:text-accent transition-colors"
@@ -80,7 +80,7 @@ const Hero = () => {
               <Linkedin className="w-6 h-6" />
             </a>
             <a 
-              href="mailto:alex@example.com"
+              href="thusondou30@gmail.com"
               className="p-3 glass-button hover:text-primary transition-colors"
             >
               <Mail className="w-6 h-6" />
