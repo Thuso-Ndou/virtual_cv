@@ -178,7 +178,7 @@ const Projects = () => {
         <div className="mt-12 text-center fade-in-up">
           <p className="text-muted-foreground mb-4">Want to see more of my work?</p>
           <Button asChild>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Thuso-Ndou" target="_blank" rel="noopener noreferrer">
               <Github className="w-4 h-4 mr-2" />
               View GitHub Profile
             </a>
