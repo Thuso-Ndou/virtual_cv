@@ -21,18 +21,13 @@ const Skills = () => {
     // Backend
     { name: "Node.js", level: 85, category: 'backend' },
     { name: "Express.js", level: 80, category: 'backend' },
-    { name: "PostgreSQL", level: 75, category: 'backend' },
+    { name: "CosmosDB", level: 75, category: 'backend' },
     { name: "MongoDB", level: 70, category: 'backend' },
-    { name: "Python", level: 75, category: 'backend' },
-    { name: "GraphQL", level: 70, category: 'backend' },
     
     // Tools
     { name: "Git", level: 90, category: 'tools' },
     { name: "Docker", level: 75, category: 'tools' },
-    { name: "AWS", level: 70, category: 'tools' },
-    { name: "Figma", level: 80, category: 'tools' },
-    { name: "Jest", level: 75, category: 'tools' },
-    { name: "Webpack", level: 70, category: 'tools' }
+    { name: "Azure", level: 70, category: 'tools' },
   ];
 
   const categories = {
@@ -114,7 +109,7 @@ const Skills = () => {
             Also experienced with
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
-            {['Redux', 'Sass', 'Firebase', 'Netlify', 'Vercel', 'Linux', 'Nginx', 'Redis'].map((tech) => (
+            {['Flutter', 'Sass', 'Firebase', 'Scratch', 'Vercel', 'Linux', 'Nginx', 'Redis'].map((tech) => (
               <span 
                 key={tech}
                 className="px-4 py-2 bg-muted/30 text-muted-foreground rounded-lg text-sm hover:bg-primary/10 hover:text-primary transition-colors cursor-default"
