@@ -58,7 +58,7 @@ const Navigation = () => {
           {/* Logo */}
           <button
             onClick={() => scrollToSection('home')}
-            className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hover:scale-105 transition-transform"
+            className="text-xl font-bold text-white hover:scale-105 transition-transform"
           >
             Thuso Ndou
           </button>
