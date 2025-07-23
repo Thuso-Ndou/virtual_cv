@@ -26,8 +26,8 @@ const Skills = () => {
     
     // Tools
     { name: "Git", level: 90, category: 'tools' },
-    { name: "Docker", level: 75, category: 'tools' },
-    { name: "Azure", level: 70, category: 'tools' },
+    { name: "Docker", level: 70, category: 'tools' },
+    { name: "Azure", level: 80, category: 'tools' },
   ];
 
   const categories = {
