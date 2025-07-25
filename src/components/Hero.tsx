@@ -1,6 +1,8 @@
 import { Button } from "../components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "../components/ui/avatar";
 import bg1 from "../assets/bg1.png";
+import profilePhoto from "../assets/avatar.jpg";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -28,10 +30,19 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto fade-in-up">
         <div className="glass-card p-8 md:p-12">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-            <span className="block text-foreground">Hello, I'm</span>
-            <span className="section-title">Thuso Ndou</span>
-          </h1>
+          {/* Profile and Title Section - Added Flex Container */}
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-6">
+            {/* Profile Avatar */}
+            <Avatar className="w-24 h-24 md:w-32 md:h-32 border-4 border-primary/20 shadow-2xl">
+              <AvatarImage src={profilePhoto} alt="Thuso Ndou" />
+              <AvatarFallback className="text-2xl font-bold">TN</AvatarFallback>
+            </Avatar>
+            
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold">
+              <span className="block text-foreground">Hello, I'm</span>
+              <span className="section-title">Thuso Ndou</span>
+            </h1>
+          </div>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-light">
             Full Stack Developer & UI/UX Enthusiast
