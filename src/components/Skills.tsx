@@ -17,17 +17,18 @@ const Skills = () => {
     { name: "Tailwind CSS", level: 90, category: 'frontend' },
     { name: "JavaScript", level: 95, category: 'frontend' },
     { name: "HTML/CSS", level: 95, category: 'frontend' },
-    
+
     // Backend
     { name: "Node.js", level: 85, category: 'backend' },
     { name: "Express.js", level: 80, category: 'backend' },
     { name: "CosmosDB", level: 75, category: 'backend' },
     { name: "MongoDB", level: 70, category: 'backend' },
-    
+
     // Tools
     { name: "Git", level: 90, category: 'tools' },
     { name: "Docker", level: 70, category: 'tools' },
     { name: "Azure", level: 80, category: 'tools' },
+    { name: "Notebook", level: 75, category: 'tools' },
   ];
 
   const categories = {
@@ -74,7 +75,7 @@ const Skills = () => {
               <h3 className={`text-xl font-semibold mb-6 ${category.color}`}>
                 {category.title}
               </h3>
-              
+
               <div className="space-y-4">
                 {getSkillsByCategory(key).map((skill, index) => (
                   <div key={skill.name} className="group">
@@ -86,9 +87,9 @@ const Skills = () => {
                         {skill.level}%
                       </span>
                     </div>
-                    
+
                     <div className="skill-bar h-2">
-                      <div 
+                      <div
                         className="skill-progress h-full"
                         style={{
                           width: isVisible ? `${skill.level}%` : '0%',
@@ -110,7 +111,7 @@ const Skills = () => {
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
             {['Flutter', 'Sass', 'Firebase', 'Scratch', 'Vercel', 'Linux', 'Nginx', 'Redis'].map((tech) => (
-              <span 
+              <span
                 key={tech}
                 className="px-4 py-2 bg-muted/30 text-muted-foreground rounded-lg text-sm hover:bg-primary/10 hover:text-primary transition-colors cursor-default"
               >
