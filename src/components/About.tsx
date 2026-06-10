@@ -31,6 +31,10 @@ const About = () => {
           <h2 className="section-title mb-4">About Me</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             I started teaching myself to code about 5 years ago. That curiosity led me to complete a BSc in IT at North-West University, where I built a strong foundation in C#, Java, Python, and cloud computing (Azure).
+
+            Today, I focus on full-stack development with React, Node.js, and TypeScript. My GitHub shows 30+ projects, including Knolink (a research workspace with AI) and a full e‑commerce platform with Stripe payments.
+
+            I'm looking for my first role in software development – I'm ready to learn, contribute, and grow alongside experienced engineers.
           </p>
         </div>
 
