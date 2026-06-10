@@ -103,10 +103,6 @@ const About = () => {
                   <div className="text-2xl font-bold text-accent">5+</div>
                   <div className="text-sm text-muted-foreground">Years Coding</div>
                 </div>
-                <div>
-                  <div className="text-2xl font-bold text-primary">100%</div>
-                  <div className="text-sm text-muted-foreground">Satisfied</div>
-                </div>
               </div>
             </div>
           </div>
