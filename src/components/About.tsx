@@ -30,7 +30,7 @@ const About = () => {
         <div className="text-center mb-16 fade-in-up">
           <h2 className="section-title mb-4">About Me</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A passionate developer with 5+ years of experience crafting digital experiences
+            I started teaching myself to code about 5 years ago. That curiosity led me to complete a BSc in IT at North-West University, where I built a strong foundation in C#, Java, Python, and cloud computing (Azure).
           </p>
         </div>
 

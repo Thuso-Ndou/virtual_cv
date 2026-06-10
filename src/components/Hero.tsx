@@ -45,13 +45,11 @@ const Hero = () => {
           </div>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-light">
-            Full Stack Developer & UI/UX Enthusiast
+            IT Graduate | Full-Stack Developer
           </p>
 
           <p className="text-base md:text-lg text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-            Passionate about creating exceptional digital experiences through clean code,
-            innovative design, and cutting-edge technologies. Specialized in React, Node.js,
-            and modern web development.
+            I build working web apps. BSc IT graduate from North-West University with 30+ projects – from research tools to e‑commerce platforms.
           </p>
 
           {/* CTA Buttons */}
