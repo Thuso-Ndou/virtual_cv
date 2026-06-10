@@ -39,24 +39,19 @@ const About = () => {
           <div className="fade-in-left">
             <div className="glass-card p-8">
               <h3 className="text-2xl font-semibold mb-6 text-primary">My Journey</h3>
-              <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <div className="space-y-3 text-muted-foreground leading-relaxed">
                 <p>
-                  I started teaching myself web development about 5 years ago, driven by curiosity
-                  and a love for problem-solving. What began as a hobby grew into a BSc in Information
-                  Technology at North-West University, where I built a strong foundation in C#, Java,
-                  Python, and cloud computing with Azure.
+                  I built a research workspace web app (Knolink) with React, Firebase, and OpenAI
+                  while earning my BSc IT from North-West University. I also hold certificates in
+                  IBM Data Science, Cisco Cybersecurity, and Azure cloud.
                 </p>
                 <p>
-                  Today, I focus on full-stack development using React, Node.js, TypeScript, and modern
-                  JavaScript frameworks. I've completed 30+ personal and academic projects — from a
-                  research workspace web app (Knolink) to an e‑commerce platform with payment integration.
-                  My code is on GitHub, and I'm proud of what I've built and learned independently.
+                  My toolkit: Python, SQL, C#, Java, React, Node.js, Azure (compute, storage, identity).
+                  I've completed 30+ projects – from full‑stack apps to data analysis pipelines.
                 </p>
                 <p>
-                  When I'm not coding, I'm exploring new technologies, sharpening my skills through
-                  online courses (IBM Data Science, Cisco Cybersecurity), and preparing to contribute
-                  meaningfully as a junior developer on a real‑world team. I'm eager to learn,
-                  collaborate, and grow alongside experienced engineers.
+                  I'm targeting entry‑level roles in software development, data analytics, or cloud support.
+                  I learn fast, document my work, and I'm ready to contribute on day one.
                 </p>
               </div>
 
