@@ -110,7 +110,7 @@ const Skills = () => {
             Also experienced with
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
-            {['Flutter', 'Sass', 'Firebase', 'Scratch', 'Vercel', 'Linux', 'Nginx', 'Redis'].map((tech) => (
+            {['Flutter', 'Sass', 'Firebase', 'Scratch', 'Vercel', 'Linux', 'Redis'].map((tech) => (
               <span
                 key={tech}
                 className="px-4 py-2 bg-muted/30 text-muted-foreground rounded-lg text-sm hover:bg-primary/10 hover:text-primary transition-colors cursor-default"
