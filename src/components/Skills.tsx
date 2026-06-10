@@ -1,34 +1,35 @@
-import { useState, useEffect } from "react";
-
 interface Skill {
   name: string;
-  level: number;
+  description?: string;
   category: 'frontend' | 'backend' | 'tools';
 }
 
 const Skills = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
   const skills: Skill[] = [
     // Frontend
-    { name: "React", level: 95, category: 'frontend' },
-    { name: "TypeScript", level: 90, category: 'frontend' },
-    { name: "Next.js", level: 85, category: 'frontend' },
-    { name: "Tailwind CSS", level: 90, category: 'frontend' },
-    { name: "JavaScript", level: 95, category: 'frontend' },
-    { name: "HTML/CSS", level: 95, category: 'frontend' },
+    { name: "React", category: 'frontend' },
+    { name: "TypeScript", category: 'frontend' },
+    { name: "Next.js", category: 'frontend' },
+    { name: "Tailwind CSS", category: 'frontend' },
+    { name: "JavaScript", category: 'frontend' },
+    { name: "HTML/CSS", category: 'frontend' },
 
     // Backend
-    { name: "Node.js", level: 85, category: 'backend' },
-    { name: "Express.js", level: 80, category: 'backend' },
-    { name: "CosmosDB", level: 75, category: 'backend' },
-    { name: "MongoDB", level: 70, category: 'backend' },
+    { name: "Node.js", category: 'backend' },
+    { name: "Python", description: "data analysis, IBM cert", category: 'backend' },
+    { name: "C#", description: "structured programming, apps", category: 'backend' },
+    { name: "Java", description: "OOP, mobile dev", category: 'backend' },
+    { name: "SQL", description: "database courses", category: 'backend' },
+    { name: "REST APIs", description: "built in projects", category: 'backend' },
+    { name: "Express.js", category: 'backend' },
+    { name: "CosmosDB", category: 'backend' },
+    { name: "MongoDB", category: 'backend' },
 
     // Tools
-    { name: "Git", level: 90, category: 'tools' },
-    { name: "Docker", level: 70, category: 'tools' },
-    { name: "Azure", level: 80, category: 'tools' },
-    { name: "Notebook", level: 75, category: 'tools' },
+    { name: "Git", category: 'tools' },
+    { name: "Docker", category: 'tools' },
+    { name: "Azure", category: 'tools' },
+    { name: "Notebook", category: 'tools' },
   ];
 
   const categories = {
@@ -36,24 +37,6 @@ const Skills = () => {
     backend: { title: "Backend", color: "text-accent" },
     tools: { title: "Tools & Others", color: "text-purple-400" }
   };
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    const section = document.getElementById('skills');
-    if (section) {
-      observer.observe(section);
-    }
-
-    return () => observer.disconnect();
-  }, []);
 
   const getSkillsByCategory = (category: string) => {
     return skills.filter(skill => skill.category === category);
@@ -77,25 +60,17 @@ const Skills = () => {
               </h3>
 
               <div className="space-y-4">
-                {getSkillsByCategory(key).map((skill, index) => (
-                  <div key={skill.name} className="group">
-                    <div className="flex justify-between items-center mb-2">
+                {getSkillsByCategory(key).map((skill) => (
+                  <div key={skill.name} className="group border-b border-border/10 pb-3 last:border-0 last:pb-0">
+                    <div className="flex flex-col">
                       <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
                         {skill.name}
                       </span>
-                      <span className="text-xs text-muted-foreground">
-                        {skill.level}%
-                      </span>
-                    </div>
-
-                    <div className="skill-bar h-2">
-                      <div
-                        className="skill-progress h-full"
-                        style={{
-                          width: isVisible ? `${skill.level}%` : '0%',
-                          transitionDelay: `${index * 100}ms`
-                        }}
-                      ></div>
+                      {skill.description && (
+                        <span className="text-xs text-muted-foreground mt-1">
+                          {skill.description}
+                        </span>
+                      )}
                     </div>
                   </div>
                 ))}
