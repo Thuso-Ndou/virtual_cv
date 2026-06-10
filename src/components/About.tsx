@@ -41,19 +41,22 @@ const About = () => {
               <h3 className="text-2xl font-semibold mb-6 text-primary">My Journey</h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  I started my journey in web development 5 years ago, driven by curiosity 
-                  and a love for problem-solving. What began as a hobby quickly evolved into 
-                  a passionate career focused on creating meaningful digital experiences.
+                  I started teaching myself web development about 5 years ago, driven by curiosity
+                  and a love for problem-solving. What began as a hobby grew into a BSc in Information
+                  Technology at North-West University, where I built a strong foundation in C#, Java,
+                  Python, and cloud computing with Azure.
                 </p>
                 <p>
-                  Today, I specialize in full-stack development with a strong focus on 
-                  React, Node.js, and modern JavaScript frameworks. I believe in writing 
-                  clean, efficient code and creating interfaces that users love to interact with.
+                  Today, I focus on full-stack development using React, Node.js, TypeScript, and modern
+                  JavaScript frameworks. I've completed 30+ personal and academic projects — from a
+                  research workspace web app (Knolink) to an e‑commerce platform with payment integration.
+                  My code is on GitHub, and I'm proud of what I've built and learned independently.
                 </p>
                 <p>
-                  When I'm not coding, you'll find me exploring new technologies, contributing 
-                  to open-source projects, or sharing knowledge with the developer community 
-                  through blog posts and mentoring.
+                  When I'm not coding, I'm exploring new technologies, sharpening my skills through
+                  online courses (IBM Data Science, Cisco Cybersecurity), and preparing to contribute
+                  meaningfully as a junior developer on a real‑world team. I'm eager to learn,
+                  collaborate, and grow alongside experienced engineers.
                 </p>
               </div>
 
