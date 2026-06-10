@@ -37,7 +37,7 @@ const About = () => {
               Today, I focus on full-stack development with React, Node.js, and TypeScript. My GitHub shows 30+ projects, including Knolink (a research workspace with AI) and a full e‑commerce platform with Stripe payments.
             </p>
             <p>
-              I'm looking for my first role in software development – I'm ready to learn, contribute, and grow alongside experienced engineers.
+              I'm looking for my first role in software development, I'm ready to learn, contribute, and grow alongside experienced engineers.
             </p>
           </div>
         </div>
@@ -55,7 +55,7 @@ const About = () => {
                 </p>
                 <p>
                   My toolkit: Python, SQL, C#, Java, React, Node.js, Azure (compute, storage, identity).
-                  I've completed 30+ projects – from full‑stack apps to data analysis pipelines.
+                  I've completed 30+ projects from full‑stack apps to data analysis pipelines.
                 </p>
                 <p>
                   I'm targeting entry‑level roles in software development, data analytics, or cloud support.
