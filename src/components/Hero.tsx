@@ -47,9 +47,50 @@ const Hero = () => {
                 </div>
               </div>
 
-              <p className="text-sm sm:text-base text-neutral-300 leading-relaxed max-w-2xl pt-1">
-                I engineer high-performance inference runtimes (<a href="https://apolemia.knolink.co.za" target="_blank" rel="noopener noreferrer" className="text-white hover:underline font-medium">Apolemia</a>), context-aware compiler workspaces (<a href="https://entropy.knolink.co.za" target="_blank" rel="noopener noreferrer" className="text-white hover:underline font-medium">Entropy</a>), and strategic reinforcement learning systems (<a href="https://praxis.knolink.co.za" target="_blank" rel="noopener noreferrer" className="text-white hover:underline font-medium">Praxis</a>) at <a href="https://knolink.co.za" target="_blank" rel="noopener noreferrer" className="text-white font-medium hover:text-neutral-300 underline">Knolink</a>. BSc (Hons) in Data Science student at Eduvos & BSc in IT graduate from North-West University.
-              </p>
+              <div className="space-y-2 pt-1 max-w-2xl">
+                <p className="text-sm sm:text-base text-neutral-300 leading-relaxed">
+                  I engineer high-performance inference runtimes (
+                  <a
+                    href="https://apolemia.knolink.co.za"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white font-semibold underline decoration-neutral-600 hover:decoration-white underline-offset-4 transition-colors"
+                  >
+                    Apolemia
+                  </a>
+                  ), context-aware compiler workspaces (
+                  <a
+                    href="https://entropy.knolink.co.za"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white font-semibold underline decoration-neutral-600 hover:decoration-white underline-offset-4 transition-colors"
+                  >
+                    Entropy
+                  </a>
+                  ), and strategic reinforcement learning systems (
+                  <a
+                    href="https://praxis.knolink.co.za"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white font-semibold underline decoration-neutral-600 hover:decoration-white underline-offset-4 transition-colors"
+                  >
+                    Praxis
+                  </a>
+                  ) at{" "}
+                  <a
+                    href="https://knolink.co.za"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white font-semibold underline decoration-neutral-600 hover:decoration-white underline-offset-4 transition-colors"
+                  >
+                    Knolink
+                  </a>
+                  .
+                </p>
+                <p className="text-xs sm:text-sm text-neutral-400 font-mono">
+                  BSc (Hons) in Data Science student at Eduvos • BSc in IT graduate from North-West University.
+                </p>
+              </div>
             </div>
 
             {/* CTAs & Social Connections */}

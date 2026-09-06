@@ -31,11 +31,13 @@ export const InteractiveTerminal = () => {
     },
   ]);
 
-  const terminalEndRef = useRef<HTMLDivElement>(null);
+  const terminalBodyRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    terminalEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (terminalBodyRef.current) {
+      terminalBodyRef.current.scrollTop = terminalBodyRef.current.scrollHeight;
+    }
   }, [history]);
 
   const executeCommand = (rawCmd: string) => {
@@ -286,24 +288,31 @@ export const InteractiveTerminal = () => {
         {quickPills.map((pill) => (
           <button
             key={pill.cmd}
-            onClick={() => executeCommand(pill.cmd)}
+            onClick={(e) => {
+              e.preventDefault();
+              executeCommand(pill.cmd);
+            }}
             className="px-2.5 py-1 rounded bg-neutral-900 border border-neutral-800 text-neutral-300 hover:text-white hover:bg-neutral-800 transition-all font-mono whitespace-nowrap active:scale-95"
           >
             ${pill.label}
           </button>
         ))}
         <button
-          onClick={() => executeCommand("clear")}
+          onClick={(e) => {
+            e.preventDefault();
+            executeCommand("clear");
+          }}
           className="px-2 py-1 rounded bg-neutral-900/60 border border-neutral-800 text-neutral-500 hover:text-white transition-all font-mono text-[10px] ml-auto"
         >
           clear
         </button>
       </div>
 
-      {/* Terminal Body */}
+      {/* Terminal Body - Internal Scrolling Only */}
       <div
+        ref={terminalBodyRef}
         className="p-4 sm:p-5 max-h-[250px] sm:max-h-[280px] overflow-y-auto space-y-4 text-xs sm:text-sm font-mono scrollbar-thin scrollbar-thumb-neutral-800 bg-black"
-        onClick={() => inputRef.current?.focus()}
+        onClick={() => inputRef.current?.focus({ preventScroll: true })}
       >
         {history.map((item, idx) => (
           <div key={idx} className="space-y-1.5 animate-fadeIn">
@@ -316,7 +325,6 @@ export const InteractiveTerminal = () => {
             <div className="pl-4 border-l-2 border-neutral-800 py-0.5">{item.output}</div>
           </div>
         ))}
-        <div ref={terminalEndRef} />
       </div>
 
       {/* Terminal Input Line */}

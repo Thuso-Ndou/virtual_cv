@@ -58,16 +58,16 @@ const About = () => {
               
               <div className="space-y-4 text-sm sm:text-base text-neutral-300 leading-relaxed">
                 <p>
-                  My development journey started over 5 years ago out of a deep fascination with how code turns abstract ideas into working systems. That drive led me to complete a <strong className="text-white font-semibold">BSc in Information Technology at North-West University</strong>, building a strong foundation in algorithms, OOP (C#, Java), Python, relational database modeling, and distributed cloud computing (Azure).
+                  My development journey started over 5 years ago out of a deep fascination with how code turns abstract ideas into working systems. That drive led me to complete a BSc in Information Technology at North-West University, building a strong foundation in algorithms, OOP (C#, Java), Python, relational database modeling, and distributed cloud computing (Azure).
                 </p>
                 <p>
-                  I am currently advancing my academic expertise by pursuing a <strong className="text-white font-semibold">BSc (Honours) in Data Science at Eduvos</strong>, specializing in machine learning pipelines, predictive modeling, and statistical computing to engineer intelligent, data-driven systems.
+                  I am currently advancing my academic expertise by pursuing a BSc (Honours) in Data Science at Eduvos, specializing in machine learning pipelines, predictive modeling, and statistical computing to engineer intelligent, data-driven systems.
                 </p>
                 <p>
-                  Today, I architect and build production-grade web applications using <strong className="text-white font-semibold">React, TypeScript, Node.js/Express, and Cloud Datastores</strong>. My portfolio includes 30+ completed systems—most notably <a href="https://knolink.co.za" target="_blank" rel="noopener noreferrer" className="text-white font-medium underline hover:text-neutral-300">Knolink</a>, an AI research workspace built with Pinecone vector search, OpenAI embeddings, and Firebase.
+                  Today, I architect and build production-grade web applications using React, TypeScript, Node.js/Express, and Cloud Datastores. My portfolio includes 30+ completed systems—most notably <a href="https://knolink.co.za" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">Knolink</a>, an AI research workspace built with Pinecone vector search, OpenAI embeddings, and Firebase.
                 </p>
                 <p>
-                  Beyond software engineering, I hold professional credentials in <strong className="text-white font-semibold">IBM Data Science</strong>, <strong className="text-white font-semibold">Microsoft Azure Cloud</strong>, and <strong className="text-white font-semibold">Cisco Cybersecurity</strong>.
+                  Beyond software engineering, I hold professional credentials in IBM Data Science, Microsoft Azure Cloud, and Cisco Cybersecurity.
                 </p>
               </div>
 

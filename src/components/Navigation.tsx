@@ -53,11 +53,10 @@ const Navigation = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? "bg-black/90 backdrop-blur-xl border-b border-neutral-800 py-2.5"
           : "bg-transparent py-4"
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-12">
@@ -70,14 +69,8 @@ const Navigation = () => {
               <KnolinkIcon size={22} className="w-5 h-auto" />
             </div>
             <div>
-              <span className="font-display font-bold text-base tracking-tight text-white group-hover:text-neutral-300 transition-colors flex items-center gap-1.5">
+              <span className="font-display font-bold text-base tracking-tight text-white group-hover:text-neutral-300 transition-colors block">
                 Thuso Ndou
-                <span className="text-[10px] font-mono font-normal px-1.5 py-0.5 rounded bg-neutral-900 border border-neutral-800 text-neutral-300 hidden sm:inline-block">
-                  SE
-                </span>
-              </span>
-              <span className="block text-[11px] font-mono text-neutral-400 -mt-0.5">
-                knolink.co.za
               </span>
             </div>
           </button>
@@ -88,11 +81,10 @@ const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`px-3.5 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${
-                  activeSection === item.id
+                className={`px-3.5 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${activeSection === item.id
                     ? "bg-white text-black font-semibold shadow-sm"
                     : "text-neutral-400 hover:text-white hover:bg-neutral-800/60"
-                }`}
+                  }`}
               >
                 {item.label}
               </button>
@@ -158,11 +150,10 @@ const Navigation = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`block w-full text-left px-3.5 py-2.5 rounded-xl text-sm font-medium transition-colors ${
-                    activeSection === item.id
+                  className={`block w-full text-left px-3.5 py-2.5 rounded-xl text-sm font-medium transition-colors ${activeSection === item.id
                       ? "bg-white text-black font-semibold"
                       : "text-neutral-400 hover:text-white hover:bg-neutral-900"
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </button>
