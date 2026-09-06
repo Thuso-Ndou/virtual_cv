@@ -67,7 +67,7 @@ const Projects = () => {
       architectureHighlights: [
         "Sub-100ms vector retrieval pipeline with Pinecone & OpenAI high-dimensional embeddings",
         "Unified distributed orchestration across Apolemia, Entropy, and Praxis runtimes",
-        "Zero-knowledge encrypted dispatch protocol (Pach) with verified telemetry",
+        "High-throughput model serving & context-aware AST compiler integration",
         "Deterministic multi-agent execution workspace for deep scientific research",
       ],
       techStack: [
@@ -82,8 +82,8 @@ const Projects = () => {
       featured: true,
       status: "Production • 99.9% Uptime",
       telemetry: { label: "Vector Latency", value: "< 85ms" },
-      badgeColor: "text-emerald-400 bg-emerald-950/60 border-emerald-500/30",
-      borderAccent: "border-slate-800 hover:border-emerald-500/50 hover:shadow-[0_0_30px_rgba(16,185,129,0.12)]",
+      badgeColor: "text-neutral-300 bg-neutral-900 border-neutral-800",
+      borderAccent: "border-neutral-800 hover:border-neutral-600",
       systemIcon: KnolinkIcon,
     },
     {
@@ -109,8 +109,8 @@ const Projects = () => {
       featured: true,
       status: "Production Serving",
       telemetry: { label: "TTFT Reduction", value: "3.4x Faster" },
-      badgeColor: "text-amber-400 bg-amber-950/60 border-amber-500/30",
-      borderAccent: "border-slate-800 hover:border-amber-500/50 hover:shadow-[0_0_30px_rgba(245,158,11,0.12)]",
+      badgeColor: "text-neutral-300 bg-neutral-900 border-neutral-800",
+      borderAccent: "border-neutral-800 hover:border-neutral-600",
       systemIcon: ApolemiaIcon,
     },
     {
@@ -136,8 +136,8 @@ const Projects = () => {
       featured: true,
       status: "Active Alpha v0.4",
       telemetry: { label: "AST Parse Time", value: "< 0.8ms" },
-      badgeColor: "text-cyan-400 bg-cyan-950/60 border-cyan-500/30",
-      borderAccent: "border-slate-800 hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(6,182,212,0.12)]",
+      badgeColor: "text-neutral-300 bg-neutral-900 border-neutral-800",
+      borderAccent: "border-neutral-800 hover:border-neutral-600",
       systemIcon: EntropyIcon,
     },
     {
@@ -163,8 +163,8 @@ const Projects = () => {
       featured: false,
       status: "Open Source Platform",
       telemetry: { label: "Checkout Engine", value: "Stripe Webhooks" },
-      badgeColor: "text-emerald-400 bg-emerald-950/60 border-emerald-500/30",
-      borderAccent: "border-slate-800 hover:border-emerald-500/50 hover:shadow-[0_0_30px_rgba(16,185,129,0.12)]",
+      badgeColor: "text-neutral-300 bg-neutral-900 border-neutral-800",
+      borderAccent: "border-neutral-800 hover:border-neutral-600",
       systemIcon: RootsButcheryIcon,
     },
     {
@@ -189,8 +189,8 @@ const Projects = () => {
       featured: false,
       status: "Live Utility",
       telemetry: { label: "Execution Target", value: "Vercel Edge" },
-      badgeColor: "text-indigo-400 bg-indigo-950/60 border-indigo-500/30",
-      borderAccent: "border-slate-800 hover:border-indigo-500/50 hover:shadow-[0_0_30px_rgba(99,102,241,0.12)]",
+      badgeColor: "text-neutral-300 bg-neutral-900 border-neutral-800",
+      borderAccent: "border-neutral-800 hover:border-neutral-600",
       systemIcon: Dec2BinIcon,
     },
   ];
@@ -202,16 +202,16 @@ const Projects = () => {
     : projects.filter((p) => p.category === filter);
 
   return (
-    <section id="projects" className="py-24 px-4 sm:px-6 lg:px-8 relative bg-[#090b10] border-t border-slate-800/80">
+    <section id="projects" className="py-24 px-4 sm:px-6 lg:px-8 relative bg-black border-t border-neutral-800">
       <div className="max-w-6xl mx-auto space-y-12">
         {/* Section Header */}
         <div className="text-center space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/70 text-slate-300 text-xs font-mono">
-            <Layers className="w-3.5 h-3.5 text-cyan-400" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 text-neutral-300 text-xs font-mono">
+            <Layers className="w-3.5 h-3.5 text-white" />
             <span>PRODUCTION APPLICATIONS & SYSTEMS</span>
           </div>
           <h2 className="section-title">
-            Featured <span className="gradient-text-cyan">Engineered Projects</span>
+            Featured Engineered Projects
           </h2>
           <p className="section-subtitle">
             A curated portfolio of full-stack platforms, machine intelligence runtimes, IDE compilers, and algorithms built with production engineering rigor.
@@ -220,15 +220,15 @@ const Projects = () => {
 
         {/* Category Filters */}
         <div className="flex justify-center overflow-x-auto pb-2 scrollbar-none">
-          <div className="inline-flex p-1.5 rounded-2xl bg-slate-900/90 border border-slate-800 backdrop-blur-md">
+          <div className="inline-flex p-1.5 rounded-2xl bg-neutral-900 border border-neutral-800 backdrop-blur-md">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setFilter(cat)}
                 className={`px-4 py-2 rounded-xl text-xs font-medium font-mono transition-all whitespace-nowrap ${
                   filter === cat
-                    ? "bg-slate-800 text-white border border-slate-700 shadow-md font-semibold"
-                    : "text-slate-400 hover:text-slate-200 hover:bg-slate-800/40"
+                    ? "bg-white text-black font-semibold shadow-md"
+                    : "text-neutral-400 hover:text-white"
                 }`}
               >
                 {cat === "all" ? "All Systems" : cat}
@@ -244,25 +244,25 @@ const Projects = () => {
             return (
               <div
                 key={project.id}
-                className={`p-6 sm:p-8 rounded-2xl bg-[#0e121a] border ${project.borderAccent} transition-all duration-300 flex flex-col justify-between group shadow-xl`}
+                className="p-6 sm:p-8 rounded-2xl bg-[#0a0a0a] border border-neutral-800 hover:border-neutral-600 transition-all duration-300 flex flex-col justify-between group shadow-xl"
               >
                 <div className="space-y-5">
                   {/* Top Metadata Header */}
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex items-center gap-3">
-                      <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 group-hover:scale-105 transition-transform">
+                      <div className="p-2.5 rounded-xl bg-neutral-900 border border-neutral-800 text-white group-hover:scale-105 transition-transform">
                         <SystemIcon className="w-5 h-5" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-bold font-display text-white group-hover:text-slate-100 transition-colors flex items-center gap-2">
+                        <h3 className="text-xl font-bold font-display text-white transition-colors flex items-center gap-2">
                           {project.title}
                           {project.featured && (
-                            <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-cyan-950/80 border border-cyan-500/40 text-cyan-300">
+                            <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-neutral-900 border border-neutral-800 text-neutral-300">
                               Flagship
                             </span>
                           )}
                         </h3>
-                        <p className="text-xs font-mono text-slate-400 mt-0.5">
+                        <p className="text-xs font-mono text-neutral-400 mt-0.5">
                           {project.subtitle}
                         </p>
                       </div>
@@ -276,25 +276,25 @@ const Projects = () => {
                   </div>
 
                   {/* Description */}
-                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed">
                     {project.description}
                   </p>
 
                   {/* Telemetry Metric Pill */}
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono">
-                    <span className="text-slate-400">{project.telemetry.label}:</span>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-neutral-900 border border-neutral-800 text-xs font-mono">
+                    <span className="text-neutral-400">{project.telemetry.label}:</span>
                     <span className="text-white font-bold">{project.telemetry.value}</span>
                   </div>
 
                   {/* Architectural Highlights */}
-                  <div className="p-4 rounded-xl bg-[#080b12] border border-slate-800/80 space-y-2">
-                    <p className="text-[11px] font-mono text-slate-400 uppercase tracking-wider font-semibold">
+                  <div className="p-4 rounded-xl bg-black border border-neutral-800 space-y-2">
+                    <p className="text-[11px] font-mono text-neutral-400 uppercase tracking-wider font-semibold">
                       Engineering Highlights:
                     </p>
-                    <ul className="space-y-1.5 text-xs text-slate-300">
+                    <ul className="space-y-1.5 text-xs text-neutral-300">
                       {project.architectureHighlights.map((highlight, idx) => (
                         <li key={idx} className="flex items-start gap-2">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 mt-0.5 shrink-0" />
+                          <CheckCircle2 className="w-3.5 h-3.5 text-neutral-400 mt-0.5 shrink-0" />
                           <span>{highlight}</span>
                         </li>
                       ))}
@@ -303,7 +303,7 @@ const Projects = () => {
 
                   {/* Authentic Tech Stack Badges with Real SVGs */}
                   <div className="space-y-1.5 pt-1">
-                    <p className="text-[10px] font-mono text-slate-500 uppercase tracking-wider">
+                    <p className="text-[10px] font-mono text-neutral-500 uppercase tracking-wider">
                       Technologies & Runtime
                     </p>
                     <div className="flex flex-wrap gap-2">
@@ -312,7 +312,7 @@ const Projects = () => {
                         return (
                           <span
                             key={techItem.name}
-                            className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-[11px] font-mono text-slate-300 hover:border-slate-700 transition-colors"
+                            className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900 border border-neutral-800 text-[11px] font-mono text-neutral-300 hover:border-neutral-700 transition-colors"
                           >
                             <TechIcon className="w-3.5 h-3.5" size={14} />
                             <span>{techItem.name}</span>
@@ -324,16 +324,16 @@ const Projects = () => {
                 </div>
 
                 {/* Card Action Buttons */}
-                <div className="pt-6 mt-6 border-t border-slate-800/80 flex items-center justify-between gap-3">
+                <div className="pt-6 mt-6 border-t border-neutral-800 flex items-center justify-between gap-3">
                   <div className="flex items-center gap-2.5">
                     {project.liveUrl && (
                       <Button
                         size="sm"
                         asChild
-                        className="bg-white hover:bg-slate-200 text-slate-950 font-bold text-xs h-8 px-3.5 rounded-lg shadow-md"
+                        className="bg-white hover:bg-neutral-200 text-black font-semibold text-xs h-8 px-3.5 rounded-lg shadow-sm"
                       >
                         <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="w-3.5 h-3.5 mr-1" />
+                          <ExternalLink className="w-3.5 h-3.5 mr-1 text-black" />
                           Live Launch
                         </a>
                       </Button>
@@ -344,7 +344,7 @@ const Projects = () => {
                         size="sm"
                         variant="outline"
                         asChild
-                        className="border-slate-700 bg-slate-900/90 hover:bg-slate-800 text-slate-200 text-xs h-8 px-3.5 rounded-lg hover:border-slate-600"
+                        className="border-neutral-800 bg-neutral-900 hover:bg-neutral-800 text-white text-xs h-8 px-3.5 rounded-lg hover:border-neutral-700"
                       >
                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                           <Github className="w-3.5 h-3.5 mr-1" />
@@ -359,7 +359,7 @@ const Projects = () => {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-xs font-mono text-slate-400 hover:text-cyan-400 flex items-center gap-1 transition-colors"
+                      className="text-xs font-mono text-neutral-400 hover:text-white flex items-center gap-1 transition-colors"
                     >
                       <span>Explore System</span>
                       <ArrowUpRight className="w-3.5 h-3.5" />
@@ -372,23 +372,23 @@ const Projects = () => {
         </div>
 
         {/* GitHub Repository Spotlight Banner */}
-        <div className="p-8 rounded-2xl bg-[#0e121a] border border-slate-800 text-center space-y-4 shadow-xl">
-          <div className="inline-flex items-center gap-2 p-2 rounded-xl bg-slate-900 text-cyan-400 border border-slate-800">
+        <div className="p-8 rounded-2xl bg-[#0a0a0a] border border-neutral-800 text-center space-y-4 shadow-xl">
+          <div className="inline-flex items-center gap-2 p-2 rounded-xl bg-neutral-900 text-white border border-neutral-800">
             <Terminal className="w-5 h-5" />
           </div>
           <h3 className="text-xl sm:text-2xl font-display font-bold text-white">
             Explore 30+ Production Builds & Repositories
           </h3>
-          <p className="text-xs sm:text-sm text-slate-400 max-w-2xl mx-auto">
+          <p className="text-xs sm:text-sm text-neutral-400 max-w-2xl mx-auto">
             My GitHub archive contains over 30 full-stack applications, data science notebooks, AI vector experiments, and algorithmic utilities.
           </p>
           <div className="pt-2">
             <Button
               asChild
-              className="bg-slate-900 hover:bg-slate-800 text-white font-mono text-xs h-10 px-5 rounded-xl border border-slate-700 hover:border-slate-500"
+              className="bg-neutral-900 hover:bg-neutral-800 text-white font-mono text-xs h-10 px-5 rounded-xl border border-neutral-700 hover:border-neutral-500"
             >
               <a href="https://github.com/Thuso-Ndou" target="_blank" rel="noopener noreferrer">
-                <Github className="w-4 h-4 mr-2 text-cyan-400" />
+                <Github className="w-4 h-4 mr-2 text-white" />
                 github.com/Thuso-Ndou
               </a>
             </Button>

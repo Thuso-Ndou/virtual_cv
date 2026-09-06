@@ -8,8 +8,6 @@ interface Milestone {
   category: "Leadership / Building" | "Degree" | "Certification";
   description: string;
   details: string[];
-  badgeColor: string;
-  cardBorder: string;
   icon: React.ComponentType<{ className?: string; size?: number | string }>;
 }
 
@@ -26,8 +24,6 @@ export const ExperienceTimeline = () => {
         "Statistical computing and big data engineering architectures",
         "Deep research integration with Python, NumPy, Pandas, and cloud compute",
       ],
-      badgeColor: "bg-cyan-950/80 text-cyan-300 border-cyan-500/40",
-      cardBorder: "border-slate-800 hover:border-cyan-500/40",
       icon: GraduationCap,
     },
     {
@@ -41,8 +37,6 @@ export const ExperienceTimeline = () => {
         "Integrated text-embedding-3 vectors with Pinecone vector indices",
         "Architected Apolemia inference runtime and Entropy AST compiler",
       ],
-      badgeColor: "bg-emerald-950/80 text-emerald-300 border-emerald-500/40",
-      cardBorder: "border-slate-800 hover:border-emerald-500/40",
       icon: Briefcase,
     },
     {
@@ -56,8 +50,6 @@ export const ExperienceTimeline = () => {
         "Database normalization, ACID transactions, and query optimization",
         "Software project lifecycles, testing, and agile methodologies",
       ],
-      badgeColor: "bg-indigo-950/80 text-indigo-300 border-indigo-500/40",
-      cardBorder: "border-slate-800 hover:border-indigo-500/40",
       icon: GraduationCap,
     },
     {
@@ -70,8 +62,6 @@ export const ExperienceTimeline = () => {
         "Built data cleaning and automated analysis scripts",
         "Applied statistical methods and data visualization techniques",
       ],
-      badgeColor: "bg-emerald-950/80 text-emerald-300 border-emerald-500/40",
-      cardBorder: "border-slate-800 hover:border-emerald-500/40",
       icon: PythonIcon,
     },
     {
@@ -84,8 +74,6 @@ export const ExperienceTimeline = () => {
         "Cloud resource deployment and cost management",
         "High-availability architectures and disaster recovery principles",
       ],
-      badgeColor: "bg-blue-950/80 text-blue-300 border-blue-500/40",
-      cardBorder: "border-slate-800 hover:border-blue-500/40",
       icon: AzureIcon,
     },
     {
@@ -98,73 +86,71 @@ export const ExperienceTimeline = () => {
         "Defensive strategies against web and network attack vectors",
         "Principles of secure code design and cryptographic key management",
       ],
-      badgeColor: "bg-purple-950/80 text-purple-300 border-purple-500/40",
-      cardBorder: "border-slate-800 hover:border-purple-500/40",
       icon: ShieldCheck,
     },
   ];
 
   return (
-    <section id="timeline" className="py-24 px-4 sm:px-6 lg:px-8 relative bg-[#090b10] border-t border-slate-800/80">
+    <section id="timeline" className="py-24 px-4 sm:px-6 lg:px-8 relative bg-black border-t border-neutral-800">
       <div className="max-w-4xl mx-auto space-y-12">
         {/* Section Header */}
         <div className="text-center space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/70 text-slate-300 text-xs font-mono">
-            <GraduationCap className="w-3.5 h-3.5 text-cyan-400" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 text-neutral-300 text-xs font-mono">
+            <GraduationCap className="w-3.5 h-3.5 text-white" />
             <span>CREDENTIALS & TRACK RECORD</span>
           </div>
-          <h2 className="section-title">
-            Education & <span className="gradient-text-cyan">Experience</span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-white tracking-tight">
+            Education & Experience
           </h2>
-          <p className="section-subtitle">
+          <p className="text-sm sm:text-base text-neutral-400 max-w-2xl mx-auto font-normal leading-relaxed">
             A track record of continuous learning, certified cloud & security expertise, and independent system building.
           </p>
         </div>
 
         {/* Vertical Timeline */}
-        <div className="relative border-l-2 border-slate-800 ml-4 sm:ml-8 space-y-8 pl-6 sm:pl-8">
+        <div className="relative border-l-2 border-neutral-800 ml-4 sm:ml-8 space-y-8 pl-6 sm:pl-8">
           {milestones.map((item, index) => {
             const IconComponent = item.icon;
             return (
               <div key={index} className="relative group">
                 {/* Timeline Node Point */}
-                <div className="absolute -left-[31px] sm:-left-[39px] top-2 w-4 h-4 rounded-full bg-[#0e121a] border-2 border-cyan-400 group-hover:scale-125 group-hover:bg-cyan-400 transition-all duration-300 shadow-[0_0_10px_rgba(6,182,212,0.4)]" />
+                <div className="absolute -left-[31px] sm:-left-[39px] top-2 w-4 h-4 rounded-full bg-black border-2 border-neutral-600 group-hover:border-white group-hover:bg-white transition-all duration-300 shadow-sm" />
 
                 {/* Timeline Card */}
-                <div className={`p-6 rounded-2xl bg-[#0e121a] border ${item.cardBorder} transition-all duration-300 space-y-3 shadow-xl`}>
+                <div className="p-6 rounded-2xl bg-[#0a0a0a] border border-neutral-800 hover:border-neutral-600 transition-all duration-300 space-y-3 shadow-xl">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                     <div className="flex items-start gap-3">
-                      <div className="p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 mt-0.5 shrink-0">
+                      <div className="p-2 rounded-xl bg-neutral-900 border border-neutral-800 text-white mt-0.5 shrink-0">
                         <IconComponent className="w-4 h-4" size={16} />
                       </div>
                       <div>
-                        <span className={`inline-block text-[10px] font-mono px-2 py-0.5 rounded border ${item.badgeColor} mb-1`}>
+                        <span className="inline-block text-[10px] font-mono px-2 py-0.5 rounded bg-neutral-900 text-neutral-300 border border-neutral-800 mb-1">
                           {item.category}
                         </span>
-                        <h3 className="text-lg font-bold font-display text-white group-hover:text-slate-100 transition-colors">
+                        <h3 className="text-lg font-bold font-display text-white group-hover:text-neutral-200 transition-colors">
                           {item.role}
                         </h3>
-                        <p className="text-xs font-mono text-cyan-400 font-medium">
+                        <p className="text-xs font-mono text-neutral-400 font-medium">
                           {item.organization}
                         </p>
                       </div>
                     </div>
 
-                    <span className="text-xs font-mono text-slate-400 flex items-center gap-1.5 bg-slate-900/90 px-2.5 py-1 rounded-md border border-slate-800 self-start sm:self-auto">
-                      <Calendar className="w-3 h-3 text-slate-400" />
+                    <span className="text-xs font-mono text-neutral-400 flex items-center gap-1.5 bg-neutral-900 px-2.5 py-1 rounded-md border border-neutral-800 self-start sm:self-auto">
+                      <Calendar className="w-3 h-3 text-neutral-400" />
                       {item.year}
                     </span>
                   </div>
 
-                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed pl-0.5">
+                  <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed pl-0.5">
                     {item.description}
                   </p>
 
-                  <div className="pt-2 border-t border-slate-800/60">
-                    <ul className="space-y-1 text-xs text-slate-400">
+                  <div className="pt-2 border-t border-neutral-800/80">
+                    <ul className="space-y-1 text-xs text-neutral-400">
                       {item.details.map((detail, idx) => (
                         <li key={idx} className="flex items-start gap-1.5">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 mt-0.5 shrink-0" />
+                          <CheckCircle2 className="w-3.5 h-3.5 text-neutral-400 mt-0.5 shrink-0" />
                           <span>{detail}</span>
                         </li>
                       ))}

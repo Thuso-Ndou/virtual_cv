@@ -55,7 +55,7 @@ const Navigation = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#07090e]/85 backdrop-blur-xl border-b border-slate-800/80 shadow-2xl shadow-cyan-950/20 py-2.5"
+          ? "bg-black/90 backdrop-blur-xl border-b border-neutral-800 py-2.5"
           : "bg-transparent py-4"
       }`}
     >
@@ -66,32 +66,32 @@ const Navigation = () => {
             onClick={() => scrollToSection("home")}
             className="flex items-center gap-2.5 text-left group focus:outline-none"
           >
-            <div className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center p-1.5 shadow-md group-hover:scale-105 transition-transform">
+            <div className="w-9 h-9 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center p-1.5 shadow-md group-hover:scale-105 transition-transform">
               <KnolinkIcon size={22} className="w-5 h-auto" />
             </div>
             <div>
-              <span className="font-display font-bold text-base tracking-tight text-white group-hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+              <span className="font-display font-bold text-base tracking-tight text-white group-hover:text-neutral-300 transition-colors flex items-center gap-1.5">
                 Thuso Ndou
-                <span className="text-[10px] font-mono font-normal px-1.5 py-0.5 rounded bg-cyan-950/80 border border-cyan-500/30 text-cyan-300 hidden sm:inline-block">
+                <span className="text-[10px] font-mono font-normal px-1.5 py-0.5 rounded bg-neutral-900 border border-neutral-800 text-neutral-300 hidden sm:inline-block">
                   SE
                 </span>
               </span>
-              <span className="block text-[11px] font-mono text-slate-400 -mt-0.5">
+              <span className="block text-[11px] font-mono text-neutral-400 -mt-0.5">
                 knolink.co.za
               </span>
             </div>
           </button>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center space-x-1 bg-slate-900/60 p-1.5 rounded-full border border-slate-800/80 backdrop-blur-md">
+          <nav className="hidden lg:flex items-center space-x-1 bg-neutral-900/80 p-1.5 rounded-full border border-neutral-800 backdrop-blur-md">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
                 className={`px-3.5 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${
                   activeSection === item.id
-                    ? "bg-gradient-to-r from-cyan-500/20 to-indigo-500/20 text-cyan-300 border border-cyan-500/40 shadow-[0_0_12px_rgba(6,182,212,0.2)] font-semibold"
-                    : "text-slate-400 hover:text-slate-100 hover:bg-slate-800/40"
+                    ? "bg-white text-black font-semibold shadow-sm"
+                    : "text-neutral-400 hover:text-white hover:bg-neutral-800/60"
                 }`}
               >
                 {item.label}
@@ -105,7 +105,7 @@ const Navigation = () => {
               href="https://github.com/Thuso-Ndou"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-slate-900/70 border border-slate-800 text-slate-400 hover:text-cyan-300 hover:border-cyan-500/40 transition-colors"
+              className="p-2 rounded-lg bg-neutral-900 border border-neutral-800 text-neutral-400 hover:text-white hover:border-neutral-600 transition-colors"
               title="GitHub Profile"
             >
               <Github className="w-4 h-4" />
@@ -114,7 +114,7 @@ const Navigation = () => {
               href="https://www.linkedin.com/in/thuso-ndou-511371251"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-slate-900/70 border border-slate-800 text-slate-400 hover:text-indigo-300 hover:border-indigo-500/40 transition-colors"
+              className="p-2 rounded-lg bg-neutral-900 border border-neutral-800 text-neutral-400 hover:text-white hover:border-neutral-600 transition-colors"
               title="LinkedIn Profile"
             >
               <Linkedin className="w-4 h-4" />
@@ -123,7 +123,7 @@ const Navigation = () => {
             <Button
               size="sm"
               onClick={downloadResume}
-              className="bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-slate-950 font-semibold shadow-lg shadow-cyan-500/20 text-xs px-3.5 h-9"
+              className="bg-white hover:bg-neutral-200 text-black font-semibold shadow-md text-xs px-3.5 h-9 rounded-xl"
             >
               <Download className="w-3.5 h-3.5 mr-1.5" />
               Resume
@@ -136,13 +136,13 @@ const Navigation = () => {
               size="sm"
               onClick={downloadResume}
               variant="outline"
-              className="h-8 px-2.5 text-xs border-slate-700 bg-slate-900 text-cyan-300"
+              className="h-8 px-2.5 text-xs border-neutral-700 bg-neutral-900 text-white"
             >
               <Download className="w-3.5 h-3.5" />
             </Button>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-300 focus:outline-none"
+              className="p-2 rounded-lg bg-neutral-900 border border-neutral-800 text-neutral-400 hover:text-white focus:outline-none"
               aria-label="Toggle Navigation Menu"
             >
               {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -152,7 +152,7 @@ const Navigation = () => {
 
         {/* Mobile Dropdown Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden mt-3 p-4 rounded-2xl bg-[#090d16]/98 border border-slate-800 backdrop-blur-2xl shadow-2xl animate-fadeIn">
+          <div className="lg:hidden mt-3 p-4 rounded-2xl bg-black border border-neutral-800 backdrop-blur-2xl shadow-2xl animate-fadeIn">
             <div className="space-y-1">
               {navItems.map((item) => (
                 <button
@@ -160,8 +160,8 @@ const Navigation = () => {
                   onClick={() => scrollToSection(item.id)}
                   className={`block w-full text-left px-3.5 py-2.5 rounded-xl text-sm font-medium transition-colors ${
                     activeSection === item.id
-                      ? "bg-cyan-950/60 text-cyan-300 border border-cyan-500/30 font-semibold"
-                      : "text-slate-400 hover:text-slate-100 hover:bg-slate-900/60"
+                      ? "bg-white text-black font-semibold"
+                      : "text-neutral-400 hover:text-white hover:bg-neutral-900"
                   }`}
                 >
                   {item.label}
@@ -169,13 +169,13 @@ const Navigation = () => {
               ))}
             </div>
 
-            <div className="pt-4 mt-3 border-t border-slate-800 flex items-center justify-between">
+            <div className="pt-4 mt-3 border-t border-neutral-800 flex items-center justify-between">
               <div className="flex items-center space-x-2">
                 <a
                   href="https://github.com/Thuso-Ndou"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-300"
+                  className="p-2 rounded-lg bg-neutral-900 border border-neutral-800 text-neutral-400 hover:text-white"
                 >
                   <Github className="w-4 h-4" />
                 </a>
@@ -183,7 +183,7 @@ const Navigation = () => {
                   href="https://www.linkedin.com/in/thuso-ndou-511371251"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-indigo-300"
+                  className="p-2 rounded-lg bg-neutral-900 border border-neutral-800 text-neutral-400 hover:text-white"
                 >
                   <Linkedin className="w-4 h-4" />
                 </a>
@@ -191,7 +191,7 @@ const Navigation = () => {
               <Button
                 size="sm"
                 onClick={downloadResume}
-                className="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold text-xs"
+                className="bg-white hover:bg-neutral-200 text-black font-semibold text-xs"
               >
                 <Download className="w-3.5 h-3.5 mr-1" />
                 Download CV
