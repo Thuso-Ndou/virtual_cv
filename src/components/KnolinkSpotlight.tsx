@@ -109,7 +109,7 @@ export const KnolinkSpotlight = () => {
           </h2>
 
           <p className="text-sm sm:text-base text-neutral-300 max-w-3xl mx-auto leading-relaxed">
-            “Intelligence is a systems problem.” At Knolink, Thuso Ndou engineers high-performance inference runtimes (<a href="https://apolemia.knolink.co.za" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">Apolemia</a>), context-aware developer workspaces (<a href="https://entropy.knolink.co.za" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">Entropy</a>), and strategic reinforcement learning environments (<a href="https://praxis.knolink.co.za" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">Praxis</a>).
+            “Intelligence is a systems problem.” At Knolink, Thuso Ndou engineers high-performance inference runtimes with <a href="https://apolemia.knolink.co.za" target="_blank" rel="noopener noreferrer" className="text-white hover:text-neutral-300 transition-colors">Apolemia</a>, context-aware developer workspaces with <a href="https://entropy.knolink.co.za" target="_blank" rel="noopener noreferrer" className="text-white hover:text-neutral-300 transition-colors">Entropy</a>, and strategic reinforcement learning environments with <a href="https://praxis.knolink.co.za" target="_blank" rel="noopener noreferrer" className="text-white hover:text-neutral-300 transition-colors">Praxis</a>.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 pt-2">

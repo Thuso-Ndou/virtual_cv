@@ -48,40 +48,40 @@ const Hero = () => {
               </div>
 
               <div className="space-y-2 pt-1 max-w-2xl">
-                <p className="text-sm sm:text-base text-neutral-300 leading-relaxed">
-                  I engineer high-performance inference runtimes (
+                <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-normal">
+                  I engineer high-performance inference runtimes with{" "}
                   <a
                     href="https://apolemia.knolink.co.za"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white font-semibold underline decoration-neutral-600 hover:decoration-white underline-offset-4 transition-colors"
+                    className="text-white hover:text-neutral-300 transition-colors"
                   >
                     Apolemia
                   </a>
-                  ), context-aware compiler workspaces (
+                  , context-aware compiler workspaces with{" "}
                   <a
                     href="https://entropy.knolink.co.za"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white font-semibold underline decoration-neutral-600 hover:decoration-white underline-offset-4 transition-colors"
+                    className="text-white hover:text-neutral-300 transition-colors"
                   >
                     Entropy
                   </a>
-                  ), and strategic reinforcement learning systems (
+                  , and strategic reinforcement learning systems with{" "}
                   <a
                     href="https://praxis.knolink.co.za"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white font-semibold underline decoration-neutral-600 hover:decoration-white underline-offset-4 transition-colors"
+                    className="text-white hover:text-neutral-300 transition-colors"
                   >
                     Praxis
-                  </a>
-                  ) at{" "}
+                  </a>{" "}
+                  at{" "}
                   <a
                     href="https://knolink.co.za"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white font-semibold underline decoration-neutral-600 hover:decoration-white underline-offset-4 transition-colors"
+                    className="text-white hover:text-neutral-300 transition-colors"
                   >
                     Knolink
                   </a>
