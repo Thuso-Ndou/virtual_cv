@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Button } from "./ui/button";
-import { 
-  ExternalLink, 
-  Github, 
-  Layers, 
-  Zap, 
-  ShoppingCart, 
-  Binary, 
-  CheckCircle2, 
+import {
+  ExternalLink,
+  Github,
+  Layers,
+  Zap,
+  ShoppingCart,
+  Binary,
+  CheckCircle2,
   Terminal,
   ArrowUpRight,
   Activity,
@@ -33,7 +33,11 @@ import {
   ApolemiaIcon,
   EntropyIcon,
   RootsButcheryIcon,
-  Dec2BinIcon
+  Dec2BinIcon,
+  RudmakIcon,
+  CSSIcon,
+  HTMLIcon,
+  JavaScriptIcon
 } from "./icons/TechIcons";
 
 interface Project {
@@ -62,13 +66,13 @@ const Projects = () => {
       id: 1,
       title: "Knolink Machine Intelligence Suite",
       category: "AI & Systems",
-      subtitle: "Unified Infrastructure for Deep Thinking & Multi-Agent Inference",
-      description: "Independent research & engineering platform developing specialized machine intelligence systems. Coordinates inference runtimes, AST compiler intelligence, and autonomous reinforcement learning execution across specialized compute nodes.",
+      subtitle: "Unified AI Infrastructure for Multi-Agent Inference",
+      description: "Unified AI infrastructure for multi-agent inference, coordinating inference runtimes, vector retrieval, and autonomous reinforcement learning across specialized compute nodes. Designed and built end-to-end as Founder & Software Developer.",
       architectureHighlights: [
-        "Sub-100ms vector retrieval pipeline with Pinecone & OpenAI high-dimensional embeddings",
-        "Unified distributed orchestration across Apolemia, Entropy, and Praxis runtimes",
-        "High-throughput model serving & context-aware AST compiler integration",
-        "Deterministic multi-agent execution workspace for deep scientific research",
+        "Vector retrieval pipeline with Pinecone & OpenAI embeddings for semantic search",
+        "Coordinates Apolemia, Entropy, and Praxis runtimes under a single platform",
+        "Secure authentication, data validation, and cloud deployment via Microsoft Azure",
+        "Full product lifecycle — ideation, development, deployment, and user onboarding",
       ],
       techStack: [
         { name: "React 18", icon: ReactIcon },
@@ -80,23 +84,23 @@ const Projects = () => {
       ],
       liveUrl: "https://knolink.co.za",
       featured: true,
-      status: "Production • 99.9% Uptime",
-      telemetry: { label: "Vector Latency", value: "< 85ms" },
+      status: "Live • Jul 2025",
+      telemetry: { label: "Infrastructure", value: "Azure + Pinecone" },
       badgeColor: "text-neutral-300 bg-neutral-900 border-neutral-800",
       borderAccent: "border-neutral-800 hover:border-neutral-600",
       systemIcon: KnolinkIcon,
     },
     {
       id: 2,
-      title: "Apolemia — High-Throughput Inference Runtime",
+      title: "Apolemia — Inference Infrastructure",
       category: "AI & Systems",
-      subtitle: "Ultra-Low Latency Model Serving & Dynamic KV-Cache Sparsity",
-      description: "High-throughput inference execution engine built for real-time model serving. Features dynamic KV-cache reuse, activation sparsity routing, enclave memory security, and low-latency streaming token distribution.",
+      subtitle: "AI Inference Runtime for Multi-Agent Model Serving",
+      description: "An inference runtime designed for model serving and dynamic KV-cache reuse. Researches how inference compute can be effectively distributed across specialized hardware nodes.",
       architectureHighlights: [
-        "Dynamic KV-cache reuse pipeline drastically reducing Time-To-First-Token (TTFT)",
-        "Activation sparsity routing for compute-efficient tensor execution",
-        "Resilient WebSocket and Server-Sent Events (SSE) token streaming dispatch",
-        "Hardware-isolated enclave security sandboxing for enterprise workloads",
+        "Dynamic KV-cache reuse to reduce inference latency",
+        "Sparse parameter routing for compute-efficient execution",
+        "WebSocket and Server-Sent Events (SSE) token streaming",
+        "Hardware-isolated memory containment for secure workloads",
       ],
       techStack: [
         { name: "TypeScript", icon: TypeScriptIcon },
@@ -107,23 +111,23 @@ const Projects = () => {
       ],
       liveUrl: "https://apolemia.knolink.co.za",
       featured: true,
-      status: "Production Serving",
-      telemetry: { label: "TTFT Reduction", value: "3.4x Faster" },
+      status: "Active Development",
+      telemetry: { label: "Focus", value: "Inference Routing" },
       badgeColor: "text-neutral-300 bg-neutral-900 border-neutral-800",
       borderAccent: "border-neutral-800 hover:border-neutral-600",
       systemIcon: ApolemiaIcon,
     },
     {
       id: 3,
-      title: "Entropy — Intelligent Developer IDE & AST Compiler",
+      title: "Entropy — Developer IDE & Tooling",
       category: "AI & Systems",
-      subtitle: "Browser-Native & Desktop IDE with Fine-Grained Static Intelligence",
-      description: "High-performance developer IDE and AST compiler environment engineered for deep code intelligence. Built with modular Rust crates and a reactive TypeScript interface for sub-millisecond syntax tokenization and deterministic editing.",
+      subtitle: "Browser-Native Developer Workspace with Compiler Intelligence",
+      description: "A developer IDE integrating AI model intelligence directly into the development workflow. Studies how AI systems can maintain deep context across codebases through AST analysis and intelligent tooling.",
       architectureHighlights: [
-        "Modular Rust crate architecture with high-speed AST parsing and analysis",
-        "Deterministic multi-pane editing canvas with instant state reconciliation",
-        "Integrated static analyzer and intelligent error diagnostic pipeline",
-        "Zero-latency syntax highlighting, code folding, and symbol resolution",
+        "AST compiler parsing for deep semantic code understanding",
+        "Browser-native IDE with multi-pane editing and state management",
+        "Integrated code analysis and error diagnostic tooling",
+        "WebAssembly sandboxing for safe code execution environments",
       ],
       techStack: [
         { name: "Rust", icon: RustIcon },
@@ -134,8 +138,8 @@ const Projects = () => {
       ],
       liveUrl: "https://entropy.knolink.co.za",
       featured: true,
-      status: "Active Alpha v0.4",
-      telemetry: { label: "AST Parse Time", value: "< 0.8ms" },
+      status: "Active Development",
+      telemetry: { label: "Focus", value: "AST + Compiler AI" },
       badgeColor: "text-neutral-300 bg-neutral-900 border-neutral-800",
       borderAccent: "border-neutral-800 hover:border-neutral-600",
       systemIcon: EntropyIcon,
@@ -193,6 +197,31 @@ const Projects = () => {
       borderAccent: "border-neutral-800 hover:border-neutral-600",
       systemIcon: Dec2BinIcon,
     },
+    {
+      id: 6,
+      title: "Rudmak Chilli Sauce",
+      category: "E-Commerce",
+      subtitle: "Artisan D2C Storefront with WhatsApp Commerce Integration",
+      description: "D2C storefront for a South African artisan chilli sauce brand. Includes an interactive pack builder, cart drawer with heat-level selection, and WhatsApp order dispatch. No traditional payment gateway required.",
+      architectureHighlights: [
+        "Interactive cart drawer with real-time pack builder.",
+        "WhatsApp Business API order dispatch: pre-formatted order payloads sent via wa.me deep links",
+        "Nationwide delivery flow with door-to-door courier and Paxi Pep Store pickup routing",
+        "Zero-dependency vanilla JS SPA with responsive mobile-first layout and sticky nav/action bars",
+      ],
+      techStack: [
+        { name: "HTML5", icon: HTMLIcon },
+        { name: "CSS3", icon: CSSIcon },
+        { name: "JavaScript", icon: JavaScriptIcon },
+      ],
+      liveUrl: "https://www.rudmak.co.za/",
+      featured: false,
+      status: "Live • Production",
+      telemetry: { label: "Order Channel", value: "WhatsApp API" },
+      badgeColor: "text-neutral-300 bg-neutral-900 border-neutral-800",
+      borderAccent: "border-neutral-800 hover:border-neutral-600",
+      systemIcon: RudmakIcon,
+    },
   ];
 
   const categories = ["all", "AI & Systems", "E-Commerce", "Algorithms"];
@@ -225,11 +254,10 @@ const Projects = () => {
               <button
                 key={cat}
                 onClick={() => setFilter(cat)}
-                className={`px-4 py-2 rounded-xl text-xs font-medium font-mono transition-all whitespace-nowrap ${
-                  filter === cat
-                    ? "bg-white text-black font-semibold shadow-md"
-                    : "text-neutral-400 hover:text-white"
-                }`}
+                className={`px-4 py-2 rounded-xl text-xs font-medium font-mono transition-all whitespace-nowrap ${filter === cat
+                  ? "bg-white text-black font-semibold shadow-md"
+                  : "text-neutral-400 hover:text-white"
+                  }`}
               >
                 {cat === "all" ? "All Systems" : cat}
               </button>

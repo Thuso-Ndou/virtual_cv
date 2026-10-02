@@ -21,31 +21,31 @@ export const KnolinkSpotlight = () => {
     {
       id: "apolemia",
       name: "APOLEMIA",
-      category: "Inference Runtime",
-      tagline: "High-throughput inference runtime with activation sparsity.",
-      description: "A distributed execution engine optimized for dynamic KV-cache reuse, activation sparsity parameter routing, and hardware memory enclave containment.",
+      category: "Inference Infrastructure",
+      tagline: "AI inference infrastructure for multi-agent serving.",
+      description: "An inference runtime designed for model serving and dynamic KV-cache reuse. Built to study how inference compute can be effectively distributed across specialized hardware.",
       url: "https://apolemia.knolink.co.za",
       domain: "apolemia.knolink.co.za",
       icon: ApolemiaIcon,
-      metrics: "Sparse parameter routing & enclave security",
+      metrics: "KV-cache reuse & sparse parameter routing",
     },
     {
       id: "entropy",
       name: "ENTROPY",
-      category: "Developer Platform / IDE",
-      tagline: "Context-aware development workspace with AST intelligence.",
-      description: "A browser-native and desktop IDE integrating model intelligence directly into the AST compiler, parsing codebases with deep semantic hierarchy and WebAssembly execution.",
+      category: "Developer IDE & Tooling",
+      tagline: "Developer IDE with compiler intelligence and AST parsing.",
+      description: "A browser-native developer workspace integrating model intelligence directly into the development workflow. Studies how AI can maintain deep context across complex codebases through AST analysis.",
       url: "https://entropy.knolink.co.za",
       domain: "entropy.knolink.co.za",
       icon: EntropyIcon,
-      metrics: "Hierarchical AST memory & Wasm sandboxing",
+      metrics: "AST parsing & WebAssembly sandboxing",
     },
     {
       id: "praxis",
       name: "PRAXIS",
       category: "Reinforcement Learning",
-      tagline: "Strategic intelligence through autonomous self-play.",
-      description: "An experimental reinforcement learning environment studying how strategic planning emerges from autonomous feedback, deep Monte Carlo Tree Search (MCTS), and value network convergence.",
+      tagline: "Reinforcement learning environments for strategic intelligence.",
+      description: "An experimental reinforcement learning environment studying how strategic behavior emerges through autonomous feedback loops, Monte Carlo Tree Search, and value network training.",
       url: "https://praxis.knolink.co.za",
       domain: "praxis.knolink.co.za",
       icon: PraxisIcon,
@@ -265,7 +265,7 @@ export const KnolinkSpotlight = () => {
                 We Build to Learn
               </h3>
               <p className="text-xs sm:text-sm text-neutral-300">
-                Using real, production-grade software systems as proving grounds for fundamental questions in machine intelligence.
+                Building real software systems to explore fundamental questions in machine intelligence and AI engineering.
               </p>
             </div>
 

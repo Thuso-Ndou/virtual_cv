@@ -42,7 +42,7 @@ const About = () => {
             About Thuso Ndou
           </h2>
           <p className="text-sm sm:text-base text-neutral-400 max-w-2xl mx-auto font-normal leading-relaxed">
-            A software engineer focused on building robust, scalable web applications and intelligent knowledge tools that solve real-world problems.
+            A software engineer building at the intersection of software engineering, artificial intelligence, data science, and cloud infrastructure.
           </p>
         </div>
 
@@ -58,32 +58,31 @@ const About = () => {
 
               <div className="space-y-4 text-sm sm:text-base text-neutral-300 leading-relaxed">
                 <p>
-                  My development journey started over 5 years ago out of a deep fascination with how code turns abstract ideas into working systems. That drive led me to complete a BSc in Information Technology at North-West University, building a strong foundation in algorithms, OOP (C#, Java), Python, relational database modeling, and distributed cloud computing (Azure).
+                  My development journey started out of a deep fascination with how code turns abstract ideas into working systems. That led me to complete a BSc in Information Technology at North-West University, building a strong foundation in algorithms, object-oriented programming (C#, Java), Python, relational database modeling, and cloud computing (Azure).
                 </p>
                 <p>
-                  I am currently advancing my academic expertise by pursuing a BSc (Honours) in Data Science at Eduvos, specializing in machine learning pipelines, predictive modeling, and statistical computing to engineer intelligent, data-driven systems.
+                  I am currently advancing my academic expertise with a BSc (Honours) in Data Science at Eduvos, specializing in machine learning, predictive modeling, and statistical computing.
                 </p>
                 <p>
-                  Today, I architect and build production-grade web applications using React, TypeScript, Node.js/Express, and Cloud Datastores. My portfolio includes 30+ completed systems most notably <a href="https://knolink.co.za" target="_blank" rel="noopener noreferrer" className="text-white ">Knolink</a>, an AI research workspace built with Pinecone vector search, OpenAI embeddings, and Firebase.
+                  As Founder &amp; Software Developer at <a href="https://knolink.co.za" target="_blank" rel="noopener noreferrer" className="text-white hover:text-neutral-300 transition-colors">Knolink</a>, I design and build systems for machine intelligence including inference infrastructure (<a href="https://apolemia.knolink.co.za" target="_blank" rel="noopener noreferrer" className="text-white hover:text-neutral-300 transition-colors">Apolemia</a>), developer tooling (<a href="https://entropy.knolink.co.za" target="_blank" rel="noopener noreferrer" className="text-white hover:text-neutral-300 transition-colors">Entropy</a>), and reinforcement learning environments (<a href="https://praxis.knolink.co.za" target="_blank" rel="noopener noreferrer" className="text-white hover:text-neutral-300 transition-colors">Praxis</a>).
                 </p>
                 <p>
-                  Beyond software engineering, I hold professional credentials in IBM Data Science, Microsoft Azure Cloud, and Cisco Cybersecurity.
+                  I hold professional credentials in IBM Data Science, Microsoft Azure Cloud Fundamentals, and Cisco Cybersecurity Essentials.
                 </p>
               </div>
 
-              {/* Core Attributes Pills */}
               <div className="pt-4 border-t border-neutral-800 flex flex-wrap gap-2 text-xs">
                 <span className="px-3 py-1 rounded-full bg-neutral-900 border border-neutral-800 text-neutral-300 font-mono">
-                  ✓ Data Science Honours (Eduvos)
+                  ✓ Data Science Honours (in progress)
                 </span>
                 <span className="px-3 py-1 rounded-full bg-neutral-900 border border-neutral-800 text-neutral-300 font-mono">
-                  ✓ Systems Architecture
+                  ✓ AI Systems & Cloud
                 </span>
                 <span className="px-3 py-1 rounded-full bg-neutral-900 border border-neutral-800 text-neutral-300 font-mono">
-                  ✓ Vector AI & Embeddings
+                  ✓ Full-Stack Development
                 </span>
                 <span className="px-3 py-1 rounded-full bg-neutral-900 border border-neutral-800 text-neutral-300 font-mono">
-                  ✓ Production Shipped
+                  ✓ IBM Data Science Certified
                 </span>
               </div>
             </div>

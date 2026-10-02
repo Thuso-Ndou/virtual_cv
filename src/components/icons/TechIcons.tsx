@@ -284,3 +284,43 @@ export const Dec2BinIcon: React.FC<IconProps> = ({ className = "w-5 h-5", size =
     <text x="65" y="70" fill="#34D399" fontFamily="monospace" fontSize="22" fontWeight="bold">01</text>
   </svg>
 );
+
+export const RudmakIcon: React.FC<IconProps> = ({ className = "w-5 h-5", size = 20, ...props }) => (
+  <svg width={size} height={size} viewBox="0 0 100 100" fill="none" className={className} {...props}>
+    <rect width="100" height="100" rx="20" fill="#1A0500"/>
+    {/* Flame base */}
+    <path d="M50 82C35 82 24 72 24 58C24 46 32 38 38 32C38 42 44 46 50 42C50 52 56 56 60 52C64 48 66 38 64 28C72 36 76 48 76 58C76 72 65 82 50 82Z" fill="url(#rudmak-flame)"/>
+    {/* Inner flame */}
+    <path d="M50 74C41 74 34 67 34 58C34 52 38 47 42 44C42 50 46 53 50 50C50 56 54 59 57 56C60 53 61 47 60 42C65 47 68 52 68 58C68 67 59 74 50 74Z" fill="url(#rudmak-inner)"/>
+    {/* Chilli highlight */}
+    <circle cx="50" cy="60" r="5" fill="#FF6B35" opacity="0.9"/>
+    <defs>
+      <linearGradient id="rudmak-flame" x1="50" y1="28" x2="50" y2="82" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#FF9800"/>
+        <stop offset="0.5" stopColor="#E53935"/>
+        <stop offset="1" stopColor="#B71C1C"/>
+      </linearGradient>
+      <linearGradient id="rudmak-inner" x1="50" y1="42" x2="50" y2="74" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#FFCC02"/>
+        <stop offset="0.6" stopColor="#FF6B35"/>
+        <stop offset="1" stopColor="#E53935"/>
+      </linearGradient>
+    </defs>
+  </svg>
+);
+
+export const CSSIcon: React.FC<IconProps> = ({ className = "w-5 h-5", size = 20, ...props }) => (
+  <svg width={size} height={size} viewBox="0 0 128 128" className={className} {...props}>
+    <path fill="#264DE4" d="M18.8 116.3L10 18h108l-8.8 98.3-45.3 12.5z"/>
+    <path fill="#2965F1" d="M64 121.3V27.3H108.2L100.6 109z"/>
+    <path fill="#EBEBEB" d="M27.8 47.4h36.2V35.4H15.2l1.4 15.6 36 10.2v.2H27.4l1 11.7 35.5 10v12.4L30.5 87l-.7-8.5H18.2l1.4 15.8L64 106v-12l-34.2-9.5-2-24h36.2zM100.2 47.4H64v12h23.9L86.5 73.4H64v12.1h21.1l-2 22.4-19.1 5.2V125l35.3-9.8-.3-3.2 3.7-41.4.4-4.2z"/>
+  </svg>
+);
+
+export const HTMLIcon: React.FC<IconProps> = ({ className = "w-5 h-5", size = 20, ...props }) => (
+  <svg width={size} height={size} viewBox="0 0 128 128" className={className} {...props}>
+    <path fill="#E44D26" d="M19.4 116.3L10.7 18H117.3L108.6 116.3 64 128z"/>
+    <path fill="#F16529" d="M64 120.5V26.9H108.6L100.9 111.2z"/>
+    <path fill="#EBEBEB" d="M26 44.6h38V32.6H13.4L16 62.9 64 76.6v.1H27L29.4 103l34.6 9.6V100.2L36.5 92.5l-1.7-19.6H64V56.9H40.7zM102.1 44.6H64v12H89.5L88 68.9H64V81H86.7L84.8 100.2 64 105.8V118.3L98.5 108.8 99.7 96.5 103.9 49.3z"/>
+  </svg>
+);

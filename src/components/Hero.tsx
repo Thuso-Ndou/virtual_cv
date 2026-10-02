@@ -42,41 +42,14 @@ const Hero = () => {
                     Thuso Ndou
                   </h1>
                   <p className="text-xs sm:text-sm font-mono text-neutral-400 mt-0.5">
-                    Systems for Machine Intelligence • Distributed Infrastructure
+                    Software Engineering • AI Systems • Data Science
                   </p>
                 </div>
               </div>
 
               <div className="space-y-2 pt-1 max-w-2xl">
                 <p className="text-sm sm:text-base text-neutral-300 leading-relaxed font-normal">
-                  I engineer high-performance inference runtimes with{" "}
-                  <a
-                    href="https://apolemia.knolink.co.za"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white hover:text-neutral-300 transition-colors"
-                  >
-                    Apolemia
-                  </a>
-                  , context-aware compiler workspaces with{" "}
-                  <a
-                    href="https://entropy.knolink.co.za"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white hover:text-neutral-300 transition-colors"
-                  >
-                    Entropy
-                  </a>
-                  , and strategic reinforcement learning systems with{" "}
-                  <a
-                    href="https://praxis.knolink.co.za"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white hover:text-neutral-300 transition-colors"
-                  >
-                    Praxis
-                  </a>{" "}
-                  at{" "}
+                  I build software systems at the intersection of software engineering, artificial intelligence, and cloud infrastructure. As Founder &amp; Software Developer at{" "}
                   <a
                     href="https://knolink.co.za"
                     target="_blank"
@@ -85,10 +58,37 @@ const Hero = () => {
                   >
                     Knolink
                   </a>
-                  .
+                  , I design and build systems for machine intelligence including{" "}
+                  <a
+                    href="https://apolemia.knolink.co.za"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:text-neutral-300 transition-colors"
+                  >
+                    Apolemia
+                  </a>{" "}
+                  (inference infrastructure),{" "}
+                  <a
+                    href="https://entropy.knolink.co.za"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:text-neutral-300 transition-colors"
+                  >
+                    Entropy
+                  </a>{" "}
+                  (developer IDE &amp; tooling), and{" "}
+                  <a
+                    href="https://praxis.knolink.co.za"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:text-neutral-300 transition-colors"
+                  >
+                    Praxis
+                  </a>{" "}
+                  (reinforcement learning environments).
                 </p>
                 <p className="text-xs sm:text-sm text-neutral-400 font-mono">
-                  BSc (Hons) in Data Science student at Eduvos • BSc in IT graduate from North-West University.
+                  BSc (Hons) Data Science — Eduvos (in progress) • BSc IT — North-West University (graduate)
                 </p>
               </div>
             </div>
@@ -101,7 +101,7 @@ const Hero = () => {
                 onClick={() => scrollToSection("knolink")}
               >
                 <Layers className="w-3.5 h-3.5 mr-1.5 text-black" />
-                Explore Architecture
+                Explore Knolink
               </Button>
 
               <Button
@@ -111,7 +111,7 @@ const Hero = () => {
                 onClick={() => scrollToSection("projects")}
               >
                 <Code2 className="w-3.5 h-3.5 mr-1.5 text-neutral-400" />
-                View Shipped Systems
+                View Projects
               </Button>
 
               <div className="flex items-center gap-2 pl-1">
@@ -166,10 +166,10 @@ const Hero = () => {
           <div className="p-4 rounded-xl bg-[#0a0a0a] border border-neutral-800 hover:border-neutral-600 transition-colors">
             <div className="flex items-center gap-2 text-white mb-1 font-mono">
               <Database className="w-4 h-4 text-neutral-400" />
-              <span className="text-xl font-bold text-white">&lt; 85ms</span>
+              <span className="text-xl font-bold text-white">AI + Cloud</span>
             </div>
-            <p className="text-xs font-semibold text-neutral-300">Vector Search Latency</p>
-            <p className="text-[11px] text-neutral-500 font-mono">Pinecone & OpenAI Embeddings</p>
+            <p className="text-xs font-semibold text-neutral-300">AI &amp; Cloud Systems</p>
+            <p className="text-[11px] text-neutral-500 font-mono">Azure &bull; Pinecone &bull; OpenAI</p>
           </div>
 
           <div className="p-4 rounded-xl bg-[#0a0a0a] border border-neutral-800 hover:border-neutral-600 transition-colors">
